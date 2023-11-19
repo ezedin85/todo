@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# React and TypeScript ToDo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple ToDo List application built with React, TypeScript, and Tailwind CSS. It allows users to manage their tasks by adding, deleting, and marking tasks as completed.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Optional Enhancements](#optional-enhancements)
+- [Responsive Design](#responsive-design)
+- [Evaluation Criteria](#evaluation-criteria)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Tech Stack](#tech-stack)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Task List Display:
 
-- Configure the top-level `parserOptions` property like this:
+- Display a list of tasks with their names.
+- Each task has a checkbox to mark it as completed.
+- Completed tasks are visually distinct with strikethrough.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Add Task:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Implemented a form using React and TypeScript to add a new task.
+- New tasks appear in the task list upon form submission.
+
+### Delete Task:
+
+- Provided a button to delete a task.
+- Clicking the delete button removes the task from the list.
+
+### State Management:
+
+- Utilize React state with TypeScript to manage the list of tasks.
+- Utilize React hooks such as useState to handle state changes.
+- Utilize custom React hooks such as useLocalstorage to handle data persistency.
+
+## Optional Enhancements
+
+### LocalStorage Persistence:
+
+- Tasks are stored in the browser's localStorage using custom hook for persistence.
+
+### Task Categories:
+
+- Allow users to categorize tasks (e.g., personal, work) and display them accordingly using React and TypeScript.
+
+### Styling:
+
+- Utilize Tailwind CSS for styling with some additional custom styling.
+
+## Responsive Design
+
+- The application is responsive and works well on various screen sizes using React and TypeScript.
