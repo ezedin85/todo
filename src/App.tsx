@@ -8,7 +8,7 @@ import { useLocalStorage } from './hooks/useLocalStorage'
 
 
 function App() {
-console.log("")
+console.log("this")
     const { getItem } = useLocalStorage('todos')
     const [todos, setTodos] = useState<Todo[]>([])
     const [action, setAction] = useState<Action>({ type: 'add', id: 0 })
